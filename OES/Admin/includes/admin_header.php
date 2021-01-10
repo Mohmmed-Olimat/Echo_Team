@@ -4,122 +4,126 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Admin Dashboard</title>
+    <title>Dashboard V.1 | Kiaalap - Kiaalap Admin Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
-		============================================ -->
+        ============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <!-- Google Fonts
-		============================================ -->
+        ============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <!-- Bootstrap CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Bootstrap CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- owl.carousel CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.css">
     <link rel="stylesheet" href="css/owl.transitions.css">
     <!-- animate CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- normalize CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- meanmenu icon CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/meanmenu.min.css">
     <!-- main CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/main.css">
     <!-- educate icon CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/educate-custon-icon.css">
     <!-- morrisjs CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/morrisjs/morris.css">
     <!-- mCustomScrollbar CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
     <!-- metisMenu CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
     <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
     <!-- calendar CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
     <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
     <!-- style CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="style.css">
     <!-- responsive CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- modernizr JS
-		============================================ -->
+        ============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
-    
+   
+    <!-- Start Left menu area -->
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
-            <div class="sidebar-header" style="padding-top: 10px;">
+            <div class="sidebar-header">
                 <a href="index.php"><img class="main-logo" src="img/logo/oeslogo.png" alt="" /></a>
                 <strong><a href="index.php"><img src="img/logo/oeslogo.png" alt="" /></a></strong>
             </div>
-            <div class="left-custom-menu-adp-wrap comment-scrollbar" style="margin-top: 30px;">
+            <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
-                      <li>
-                            <a  href="index.php">
-								   <span class="educate-icon educate-home icon-wrap"></span>
-								   <span class="mini-click-non">Admin Dashboard</span>
-								</a></li>
-                      
-                  
-                
+                        <li class="active">
+                            <a class="" href="index.php">
+                                   <span class="educate-icon educate-home icon-wrap"></span>
+                                   <span class="mini-click-non">Admin Dashboard</span>
+                                </a>
+                       
+                        </li>
+                   
                         <li>
-                            <a  href="#" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Admin</span></a>
-                         </li>
-                        <li>
-                            <a  href="#" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Students</span></a>
-                      
+                            <a class="" href="manageadmin.php" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Admin</span></a>
+                        
                         </li>
                         <li>
-                            <a  href="#" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Category</span></a>
-                         
+                            <a class="" href="managestudents.php" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Students</span></a>
+                          
                         </li>
                         <li>
-                            <a  href="#" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Exam</span></a>
-                    
+                            <a class="" href="managecategory.php" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Category</span></a>
+                        
                         </li>
-                    
-                  
-                    
                         <li>
-                            <a  href="#" aria-expanded="false"><span class="educate-icon educate-data-table icon-wrap"></span> <span class="mini-click-non">Questions</span></a>
-                         
+                            <a class="" href="manageexam.php" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Exam</span></a>
+                           
                         </li>
+                   
                     
-                
+                   
+                   
+                        <li>
+                            <a class="" href="managequestions.php" aria-expanded="false"><span class="educate-icon educate-data-table icon-wrap"></span> <span class="mini-click-non">Questions</span></a>
+                           
+                        </li>
+                       
+                    
                     </ul>
                 </nav>
             </div>
         </nav>
     </div>
     <!-- End Left menu area -->
-        <!-- Start Welcome area -->
+
+    <!-- Start Welcome area -->
     <div class="all-content-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="index.php"><img class="main-logo" src="img/logo/oeslogo.png" alt="" /></a>
+                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -139,32 +143,48 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
-                                   
+                                        
                                     </div>
-
                                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                                         <div class="header-right-info">
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
                                                 <li class="nav-item dropdown">
-                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="educate-icon educate-message edu-chat-pro" aria-hidden="true"></i></a>
-                                                 
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="educate-icon educate-message edu-chat-pro" aria-hidden="true"></i><span class=""></span></a>
+                                                    <div role="menu" class="author-message-top dropdown-menu animated zoomIn">
+                                                        <div class="message-single-top">
+                                                            <h1>Message</h1>
+                                                        </div>
+                                                      
+                                                        <div class="message-view">
+                                                            <a href="#">View All Messages</a>
+                                                        </div>
+                                                    </div>
                                                 </li>
-                                                <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="educate-icon educate-bell" aria-hidden="true"></i></a>
-                                                
+                                                <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="educate-icon educate-bell" aria-hidden="true"></i><span class=""></span></a>
+                                                    <div role="menu" class="notification-author dropdown-menu animated zoomIn">
+                                                        <div class="notification-single-top">
+                                                            <h1>Notifications</h1>
+                                                        </div>
+                                                      
+                                                        <div class="notification-view">
+                                                            <a href="#">View All Notification</a>
+                                                        </div>
+                                                    </div>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                             <img src="img/product/pro4.jpg" alt="" />
-                                                            <span class="admin-name">ADMIN NAME</span>
+                                                            <span class="admin-name">Prof.Anderson</span>
                                                             <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
                                                         </a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                       
-                                                        <li><a href="#"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                    
+        
+                                                        <li><a href="logout.php"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
                                                         </li>
                                                     </ul>
                                                 </li>
-                                              
+                                               
                                             </ul>
                                         </div>
                                     </div>
@@ -176,33 +196,18 @@
             </div>
 
 
-            
-            <!-- Mobile Menu start -->
-            <div class="mobile-menu-area">
-                <div class="container">
+
+          
+            <div class="breadcome-area">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="mobile-menu">
-                                <nav id="dropdown">
-                                    <ul class="mobile-menu-nav">
-                                        <li><a data-toggle="collapse" data-target="#Charts" href="#">Admin <span class="admin-project-icon edu-icon edu-down-arrow"></span></a> 
-                                        </li>
-                                        <li><a href="events.html">Students</a></li>
-                                        <li><a data-toggle="collapse" data-target="#demoevent" href="#">Category <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                          
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#demopro" href="#">Exam <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#democrou" href="#">Question <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                           
-                                        </li>
-                                       
-                                    </ul>
-                                </nav>
+                            <div class="breadcome-list">
+                           
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Mobile Menu end -->
+        </div>
+       
