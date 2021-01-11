@@ -4,14 +4,13 @@
 
 
        <!-- Body -->
-    
    
 
                 
                         <div class="sparkline12-list">
                             
                                 <div class="main-sparkline12 text-center">
-                                    <h2>Create Admin</h2>
+                                    <h2>Update Admin</h2>
                                 </div>
                          
                                    <div class="row">
@@ -62,60 +61,12 @@
                                            
                                         </div>
                                     </div>
-                            
-                     
-     
-
-
-                                    </div>
 
 
 
 
                                     
-                                <div class="sparkline12-list mg-tb-30">
-                            
                                 
-                         
-                                   <div class="row">
-                                         <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
-                        <div class="sparkline8-list">
-                           
-                            <div class="sparkline8-graph">
-                                <div class="static-table-list">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Full_Name</th>
-                                                <th>Email</th>
-                                                <th>Password</th>
-                                                <th>Update</th>
-                                                <th>Delete</th>
-                                            </tr>
-                                        </thead>
-                                                                                <tbody>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <td><a href="edit_admin.php" class="btn btn-primary">Edit</a></td>
-                                        <td><a href="delete_admin.php" class="btn btn-danger">Delete</a></td>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                                    </div>
-                            
-                     
-     
-
-
-                                    
-                                    </div>
-       
         <!-- Body End -->
 
 

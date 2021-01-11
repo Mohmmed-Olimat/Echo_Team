@@ -11,7 +11,7 @@
                         <div class="sparkline12-list">
                             
                                 <div class="main-sparkline12 text-center">
-                                    <h2>Create Admin</h2>
+                                    <h2>Manage Students</h2>
                                 </div>
                          
                                    <div class="row">
@@ -22,7 +22,7 @@
                                                     <div class="form-group-inner">
                                                         <div class="row">
                                                             <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
-                                                                Full Name
+                                                               Full_Name
                                                                 <input type="text" class="form-control" /> </div>
                                                         </div>
                                                     </div>
@@ -30,28 +30,53 @@
                                                     <div class="form-group-inner">
                                                         <div class="row">
                                                             <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
-                                                                Email
+                                                                Email  
+                                                                <input type="email" class="form-control" />
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                              <div class="form-group-inner">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
+                                                                Mobile    
+                                                                <input type="email" class="form-control" />
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                      <div class="form-group-inner">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
+                                                               Education level   
+                                                                <input type="email" class="form-control" />
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                       <div class="form-group-inner">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
+                                                             Password   
+                                                                <input type="email" class="form-control" />
+                                                         </div>
+                                                        </div>
+                                                    </div>
+
+                                                       <div class="form-group-inner">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
+                                                            Image   
                                                                 <input type="email" class="form-control" />
                                                          </div>
                                                         </div>
                                                     </div>
 
 
-
-                                                    <div class="form-group-inner">
-                                                        <div class="row">
-                                                            <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
-                                                               Password
-                                                                <input type="password" class="form-control" />
-                                                      </div>  
-                                                  </div>
-                                                    </div>
+                                                 
                                                   
                                                  
                                                  
                                               <div >      
                                                      
-                                         <button class="btn btn-lg btn-info col-lg-12" type="submit">
+                                         <button class="btn btn-lg btn-info col-lg-12" type="submit"name="submit">
                                             Save
                                          </button>
                                            
@@ -87,20 +112,18 @@
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>Full_Name</th>
-                                                <th>Email</th>
-                                                <th>Password</th>
-                                                <th>Update</th>
+                                                <th>Category Name</th>
+                                                <th>Category Description</th>
+                                                <th>Edit</th>
                                                 <th>Delete</th>
                                             </tr>
                                         </thead>
-                                                                                <tbody>
+                                        <tbody>
                                         <th></th>
                                         <th></th>
                                         <th></th>
-                                        <th></th>
-                                        <td><a href="edit_admin.php" class="btn btn-primary">Edit</a></td>
-                                        <td><a href="delete_admin.php" class="btn btn-danger">Delete</a></td>
+                                        <td><a href="edit_cat.php" class="btn btn-primary">Edit</a></td>
+                                        <td><a href="delete_cat.php" class="btn btn-danger">Delete</a></td>
                                         </tbody>
                                     </table>
                                 </div>
