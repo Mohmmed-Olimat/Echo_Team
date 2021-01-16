@@ -1,0 +1,20 @@
+.grey-box-icon {
+background: #e6e6e6 ;
+padding: 15px 20px 20px 20px;
+text-align: center;
+margin-top: 113px;
+position: relative;
+}
+.grey-box-icon-pos{
+    margin-top: -88px;
+    margin-bottom: 31px;
+}
+.grey-box-icon:hover .fontawesome-icon.circle-white {
+background-color: #f6f6f6;
+color: #697277;
+-moz-transition: all .2s ease-in;
+-webkit-transition: all .2s ease-in;
+-o-transition: all .2s ease-in;
+transition: all .2s ease-in;
+}
+
