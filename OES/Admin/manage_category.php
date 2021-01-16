@@ -9,6 +9,11 @@
     
     $x->cat_name    = $_POST['cat_name'];
     $x->cat_desc    = $_POST['cat_desc'];
+    $x->cat_image       = $_FILES['cat_image']['name'];
+    $tmp_name       =$_FILES['cat_image']['tmp_name'];
+    $path           ='img/category/';
+
+    move_uploaded_file($tmp_name,$path.$x->cat_image);
     
     $q=$x->create();
     
@@ -36,7 +41,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <form action="" class="pl-5" method="post">                                              
+                <form action="" class="pl-5" method="post" enctype="multipart/form-data">                                              
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
@@ -52,6 +57,14 @@
                             <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
                              Category Description
                              <input type="text" class="form-control" name="cat_desc" />
+                         </div>  
+                     </div>
+                 </div>    
+                 <div class="form-group-inner">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
+                             Category Image
+                             <input  name="cat_image" type="file"  class="form-control" >
                          </div>  
                      </div>
                  </div>    
@@ -87,6 +100,7 @@
                             <th>ID</th>
                             <th>Category Name</th>
                             <th>Description</th>
+                            <th>Image</th>
                             <th>Edit</th>
                            <th>Delete</th>
                         </tr>
@@ -102,7 +116,7 @@
                                                 echo "<td>{$row['cat_id']}</td>";
                                                 echo "<td>{$row['cat_name']}</td>";
                                                 echo "<td>{$row['cat_desc']}</td>";
-
+                                                echo "<td><img src='img/category/{$row['cat_image']}' width='100' height='100'></td>";
                                                 echo "<td><a href='edit_category.php?id={$row['cat_id']}' class='btn btn-warning'>Edit</a></td>";
                                                 echo "<td><a href='delete_category.php?id={$row['cat_id']}' class='btn btn-danger'>Delete</a></td>";
                                                 echo "</tr>";
