@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard V.1 | Kiaalap - Kiaalap Admin Template</title>
+    <title>Admin Dashboard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -89,15 +89,15 @@
                         
                         </li>
                         <li>
-                            <a class="" href="managestudents.php" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Students</span></a>
+                            <a class="" href="manage_student.php" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Students</span></a>
                           
                         </li>
                         <li>
-                            <a class="" href="managecategory.php" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Category</span></a>
+                            <a class="" href="manage_category.php" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Category</span></a>
                         
                         </li>
                         <li>
-                            <a class="" href="manageexam.php" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Exam</span></a>
+                            <a class="" href="manage_exam.php" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Exam</span></a>
                            
                         </li>
                    
@@ -105,7 +105,7 @@
                    
                    
                         <li>
-                            <a class="" href="managequestions.php" aria-expanded="false"><span class="educate-icon educate-data-table icon-wrap"></span> <span class="mini-click-non">Questions</span></a>
+                            <a class="" href="manage_question.php" aria-expanded="false"><span class="educate-icon educate-data-table icon-wrap"></span> <span class="mini-click-non">Questions</span></a>
                            
                         </li>
                        

@@ -1,19 +1,21 @@
  <?php
     
-   include('includes/adminClass.php');
-   $x = new Admin();
+   include('includes/examClass.php');
+   
+   $x = new Exam();
+   
 
     if(isset($_POST['submit'])){
       
         
     
-    $x->admin_email = $_POST['admin_email'];
-    $x->password    = $_POST['admin_password'];
-    $x->admin_name  = $_POST['admin_fullname'];
+    $x->name = $_POST['name'];
+    $x->cat_id    = $_POST['cat_id'];
+    
     $q=$x->create();
     
     if($q){
-        header("location:manageadmin.php");
+        header("location:manage_exam.php");
         
     }
 }
@@ -32,7 +34,7 @@
 
        <div class="sparkline12-list">
         <div class="main-sparkline12 text-center">
-            <h2>Create Admin</h2>
+            <h2>Create Exam</h2>
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -40,25 +42,35 @@
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
-                                Full Name
-                                <input type="text" class="form-control" name="admin_fullname" />
+                                Exam Name
+                                <input type="text" class="form-control" name="name" />
                             </div>
                         </div>
                     </div>
 
+                
                     <div class="form-group-inner">
                         <div class="row">
                             <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
-                                Email
-                                <input type="email" class="form-control" name="admin_email"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group-inner">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-3 col-sm-3 col-xs-12">
-                             Password
-                             <input type="password" class="form-control" name="admin_password" />
+                             Category ID
+                             
+                             <select name="cat_id" id="select" class="form-control">
+                                        <option value="0">Please select</option>
+                                            <?php
+                                             if ($data=$x->readAllcategory()){       
+                         
+                                        foreach ($data as $key => $value) {
+                                            foreach ($value as $k => $v) {$row[$k]=$v;}
+                                            
+                                            $i=$row['cat_id'];
+                                            echo "<option value=$i>";
+                                            echo "{$row['cat_name']}";
+                                            echo "</option>";
+
+                                            }
+                                        }
+                                             ?>
+                                                    </select>
                          </div>  
                      </div>
                  </div>    
@@ -92,27 +104,26 @@
                     <thead class="" style="background-color: gray;">
                         <tr>
                             <th>ID</th>
-                            <th>Email</th>
-                            <th>Name</th>
-                            <th>Password</th>
+                            <th>Exam Name</th>
+                            <th>Category ID</th>
                             <th>Edit</th>
                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                          if($data=$x->readAll()){
+                        if ($data=$x->readAll()){
+                          
                          
                                         foreach ($data as $key => $value) {
                                             foreach ($value as $k => $v) {$row[$k]=$v;}
                                                 echo "<tr>";
-                                                echo "<td>{$row['admin_id']}</td>";
-                                                echo "<td>{$row['admin_email']}</td>";
-                                                echo "<td>{$row['admin_name']}</td>";
-                                                echo "<td>{$row['password']}</td>";
+                                                echo "<td>{$row['exam_id']}</td>";
+                                                echo "<td>{$row['name']}</td>";
+                                                echo "<td>{$row['cat_id']}</td>";
 
-                                                echo "<td><a href='edit_admin.php?id={$row['admin_id']}' class='btn btn-warning'>Edit</a></td>";
-                                                echo "<td><a href='delete_admin.php?id={$row['admin_id']}' class='btn btn-danger'>Delete</a></td>";
+                                                echo "<td><a href='edit_exam.php?id={$row['exam_id']}&cat_id={$row['cat_id']}' class='btn btn-warning'>Edit</a></td>";
+                                                echo "<td><a href='delete_exam.php?id={$row['exam_id']}' class='btn btn-danger'>Delete</a></td>";
                                                 echo "</tr>";
                                             
                                             
