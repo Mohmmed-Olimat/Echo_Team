@@ -1,8 +1,7 @@
 <?php 
 
-require('DBconnection.php');
 
-class Question extends dbconnection{
+class Question extends Exam{
 
 	public $q_id;
 	public $exam_id;
@@ -35,6 +34,12 @@ class Question extends dbconnection{
 	}
 	public function readById($id){
 		$query  = "SELECT * FROM questions WHERE q_id = $id";
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);	
+	}
+
+	public function readByexamId($id){
+		$query  = "SELECT * FROM questions WHERE exam_id = $id";
 		$result = $this->performQuery($query);
 		return $this->fetchAll($result);	
 	}

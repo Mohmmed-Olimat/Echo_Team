@@ -1,20 +1,20 @@
 <?php 
 
-require('DBconnection.php');
 
-class Category extends dbconnection{
+
+class Category extends Student{
 
 	public $cat_id;
 	public $cat_name;
 	public $cat_desc;
-	
+	public $cat_image;
 	
 
 
 
 	public function create(){
-		$query = "INSERT INTO category(cat_name,cat_desc)
-				 VALUES('$this->cat_name','$this->cat_desc')";
+		$query = "INSERT INTO category(cat_name,cat_desc,cat_image)
+				 VALUES('$this->cat_name','$this->cat_desc','$this->cat_image')";
 		return $this->performQuery($query);
 	}
 
@@ -30,7 +30,8 @@ class Category extends dbconnection{
 	}
 	public function update($id){
 		$query = "UPDATE category SET cat_name      = '$this->cat_name',
-								   	  cat_desc 		= '$this->cat_desc'
+								   	  cat_desc 		= '$this->cat_desc',
+								   	   cat_image     = '$this->cat_image'
 								   
 								   WHERE cat_id     = $id";
 		return $this->performQuery($query);

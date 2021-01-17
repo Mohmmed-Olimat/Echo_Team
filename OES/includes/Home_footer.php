@@ -1,7 +1,7 @@
 
         <!-- footer start -->
         
-        <div class="footer-copyright-area" style="background-color: #31a372">
+        <div class="footer-copyright-area" style="background-color: #00b386">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">

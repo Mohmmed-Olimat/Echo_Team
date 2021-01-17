@@ -6,10 +6,15 @@ if (! $_SESSION['student_id'] )
 
 }
 include('studentClass.php');
+include('includes/categoryClass.php');
+include('includes/examClass.php');
+include('includes/questionClass.php');
+
 $x = new Student();
 $id=$_SESSION['student_id'];
 $data=$x->readById($id);
 $studentSet=$data[0];
+
 ?>
 
 
@@ -97,7 +102,7 @@ $studentSet=$data[0];
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="header-top-wraper">
-                                <div class="row" style="background-color: #31a372">
+                                <div class="row" style="background-color: #00b386">
                         
                                     <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12" >
                                         <div class="header-top-menu tabl-d-n">
