@@ -16,10 +16,9 @@
                                 <img src="img/1.png" alt="" />
                             </div><!--icon box top -->
                             <h4>Online Exam</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
-                            eset nec lacus elit dor broma.</p>
+                            <p>is a quick and convenient online test to help  students and employers check your information.the latest technology with the reliability and quality you.</p>
                           
-              <a href="exam.php"><button type="button" class="btn btn-primary">Start</button></a>
+              <a href="category.php"><button type="button" class="btn btn-primary">Start</button></a>
                         </div><!--grey box -->
                     </div>
                     <!--/span3-->
@@ -30,9 +29,8 @@
                                 <img src="img/2.png" alt="" />
                             </div><!--icon box top -->
                             <h4>My History</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
-                            eset nec lacus elit dor broma.</p>
-                           <a href="exam.php">  <button type="button" class="btn btn-primary">Show</button></a>
+                            <p>You can see all your mark in any exam with a correct answer help students and employers check your information.  the latest technology with the reliability and quality you.</p>
+                           <a href="history.php">  <button type="button" class="btn btn-primary">Show</button></a>
                         </div><!--grey box -->
                     </div><!--/span3-->
                     <div class="col-md-3">
@@ -41,9 +39,8 @@
                                 <img src="img/3.png" alt="" />
                             </div><!--icon box top -->
                             <h4>Online cousres</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
-                            eset nec lacus elit dor broma.</p>
-                         <a href="exam.php"> <button type="button" class="btn btn-primary">Start</button></a>
+                            <p>We have lots of exam preparation to help you get ready for your exam. These include free materials . Search for your exam and find the preparation materials you need.</p>
+                         <a href="#"> <button type="button" class="btn btn-primary">Start</button></a>
                         </div><!--grey box -->
                     </div><!--/span3-->
                     <div class="col-md-3">
