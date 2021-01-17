@@ -183,14 +183,16 @@
                                 <select class="form-control" name="answer" >
                                                 
                                             <?php
-                                      
-                                            for ($i=1;$i<5;$i++) { 
+                                            $c=5;
+                                       if ($questionSet['option1']=='True'){$c=3;}
+                                            for ($i=1;$i<$c;$i++) { 
                                                 $op='option'.$i;
                                                 echo "<option value='$op'";
                                                 if($op==$answer){echo " selected";}
                                                 echo ">";
                                                    echo $op;
                                                      echo "</option>";
+
                                             }
 
                                              ?>
