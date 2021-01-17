@@ -39,5 +39,14 @@ class Admin extends dbconnection{
 		$query = "DELETE FROM admin WHERE admin_id = $id";
 		$this->performQuery($query);
 	}
+	public function login($email,$pass){
+		$query  = "SELECT * FROM admin 
+		           WHERE admin_email = '$email' AND
+					     password 	 = '$pass' ";
+		
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);
+	}
+
 
 }
