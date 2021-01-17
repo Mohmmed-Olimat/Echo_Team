@@ -72,6 +72,12 @@ if (! $_SESSION['id'] )
     <!-- modernizr JS
         ============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+     <!--  JQ
+        ============================================ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+        
+    </script>
+
 </head>
 
 <body>
