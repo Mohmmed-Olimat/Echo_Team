@@ -46,5 +46,14 @@ class Student extends dbconnection{
 		$query = "DELETE FROM student WHERE stu_id = $id";
 		$this->performQuery($query);
 	}
+	public function login($email,$pass){
+		$query  = "SELECT * FROM student 
+		           WHERE email = '$email' AND
+					     password 	 = '$pass' ";
+		
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);
+	}
+
 
 }

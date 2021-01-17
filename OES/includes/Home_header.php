@@ -1,3 +1,18 @@
+<?php
+session_start();
+if (! $_SESSION['student_id'] )
+{
+    header("location:signup_student/slogin.php");
+
+}
+include('studentClass.php');
+$x = new Student();
+$id=$_SESSION['student_id'];
+$data=$x->readById($id);
+$studentSet=$data[0];
+?>
+
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -111,15 +126,21 @@
                                                 <li class="nav-item">
 
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-                                                            <img src="img/product/pro4.jpg" alt=""/>
-                                                            <span class="admin-name si">Prof.Anderson</span>
+                                                        <?php
+                                                        $img=$studentSet['image']; 
+                                                        echo "<img src='Admin/img/student/$img'>"; 
+                                                         ?>
+
+                                                            <span class="admin-name si">
+                                                                <?php echo $studentSet['full_name'];?>    
+                                                            </span>
                                                             <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
                                                         </a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
                                                     
         
-                                                           <li> <a href="supdate.php">Update Info</a></li>
-                                                          <li> <a href="slogout.php">Logout>></a></li>
+                                                           <li> <a href="signup_student/updateinfo.php">Update Info</a></li>
+                                                          <li> <a href="signup_student/logout.php">Logout>></a></li>
                                                     </ul>
                                                 </li>
                                                
@@ -133,9 +154,7 @@
                 </div>
             </div>
 
-
-
-          
+            
             <div class="breadcome-area" >
                 <div class="container-fluid">
                     <div class="row">
