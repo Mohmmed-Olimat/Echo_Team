@@ -70,12 +70,12 @@
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="email" name="email" id="your_name" placeholder="Your Email"
-                                       value="<?php echo $email; ?>" />
+                                       value="<?php echo $email; ?>" required />
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="pass" id="your_pass" placeholder="Password"
-                                       value="<?php echo $pass; ?>" />
+                                       value="<?php echo $pass; ?>" required />
                             </div>
                              <div class=" form-button text-center">
                                 

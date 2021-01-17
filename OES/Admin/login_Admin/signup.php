@@ -74,12 +74,12 @@
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"
-                                        value="<?php echo $name ;?>" />
+                                        value="<?php echo $name ;?>" required />
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
                                 <input type="text" name="email" id="email" placeholder="Your Email"
-                                       value="<?php echo $email; ?>" />
+                                       value="<?php echo $email; ?>" required />
                                 <div style="color: red;">
                                     <?php
                                     if (isset($emailerror)) 
@@ -92,11 +92,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Password"/>
+                                <input type="password" name="pass" id="pass" placeholder="Password" required />
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="con_pass" id="pass" placeholder="Confirm-Password"/>
+                                <input type="password" name="con_pass" id="pass" placeholder="Confirm-Password" required />
                                 <div style="color: red;">
                                     <?php
                                     if (isset($errorpass)) 
