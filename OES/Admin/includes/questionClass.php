@@ -12,14 +12,15 @@ class Question extends dbconnection{
 	public $option3;
 	public $option4;
 	public $answer;
+	public $q_img;
 	
 
 
 
 	public function create(){
-		$query = "INSERT INTO questions(exam_id,question_text,option1,option2,option3,option4,answer)
+		$query = "INSERT INTO questions(exam_id,question_text,option1,option2,option3,option4,answer, q_img)
 				 VALUES('$this->exam_id','$this->question_text',
-				 '$this->option1','$this->option2','$this->option3','$this->option4','$this->answer')";
+				 '$this->option1','$this->option2','$this->option3','$this->option4','$this->answer' , '$this->q_img' )";
 		return $this->performQuery($query);
 	}
 
@@ -45,7 +46,7 @@ class Question extends dbconnection{
 									 option1  = '$this->option1',
 									 option2    = '$this->option2',
 									 option3 = '$this->option3',
-									 option4     = '$this->option1',
+									 option4     = '$this->option4',
 									 answer     = '$this->answer'
 						    WHERE q_id   = $id";
 		return $this->performQuery($query);

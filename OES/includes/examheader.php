@@ -93,12 +93,7 @@ $studentSet=$data[0];
 </head>
 
 <body>
-   
-
-    <!-- Start Welcome area -->
-    <div class="">
-    
-        <div class="col-lg-12">
+<div class="col-lg-12">
            
                 <div class="container-fluid">
                     <div class="row">
@@ -111,43 +106,12 @@ $studentSet=$data[0];
                                             <ul class="nav navbar-nav mai-top-nav">
                                                 <li> 
                        
-                            <a href="index.php"><img class="main-logo" 
-                                src="img/oeslogo.png" alt="" /></a>
+                            <img class="main-logo" 
+                                src="img/oeslogo.png" alt="" />
                         </li>
-                                                <li class=""><a href="index.php" class="nav-link h4 si " >Home</a>
-                                                </li>
-                                                <li class="nav-item"><a href="Category.php" class="nav-link h4 si">Category</a>
-                                                </li>
-                                                <li class="nav-item"><a href="history.php" class="nav-link h4 si">Your History</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class=" h4 si col-lg-6 col-md-5 col-sm-12 col-xs-12">
-                                        <div class="header-right-info">
-                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                                
                                                
-                                                <li class="nav-item">
-
-                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-                                                        <?php
-                                                        $img=$studentSet['image']; 
-                                                        echo "<img src='Admin/img/student/$img'>"; 
-                                                         ?>
-
-                                                            <span class="admin-name si">
-                                                                <?php echo $studentSet['full_name'];?>    
-                                                            </span>
-                                                            <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
-                                                        </a>
-                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                    
-        
-                                                           <li> <a href="signup_student/updateinfo.php">Update Info</a></li>
-                                                          <li> <a href="signup_student/logout.php">Logout</a></li>
-                                                    </ul>
-                                                </li>
-                                               
+                                              
                                             </ul>
                                         </div>
                                     </div>
@@ -158,7 +122,10 @@ $studentSet=$data[0];
                 </div>
             </div>
 
-            
+    <!-- Start Welcome area -->
+    <div class="">
+    
+        
             <div class="breadcome-area" >
                 <div class="container-fluid">
                     <div class="row">
