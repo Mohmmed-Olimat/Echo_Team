@@ -128,12 +128,12 @@ $studentSet=$data[0];
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
                                                
                                                 <li class="nav-item">
-
-                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                         <?php
                                                         $img=$studentSet['image']; 
-                                                        echo "<img src='Admin/img/student/$img'>"; 
+                                                        echo "<img src='Admin/img/student/$img' height='' width='80'>";
                                                          ?>
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                       
 
                                                             <span class="admin-name si">
                                                                 <?php echo $studentSet['full_name'];?>    
