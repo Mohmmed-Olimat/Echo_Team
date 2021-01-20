@@ -59,5 +59,13 @@ class Question extends Exam{
 		$query = "DELETE FROM questions WHERE q_id = $id";
 		$this->performQuery($query);
 	}
+	public function correct($id){
+		$query  = "SELECT answer FROM questions 
+		           WHERE q_id = $id ";
+		
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);
+		
+	}
 
 }

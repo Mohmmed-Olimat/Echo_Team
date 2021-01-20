@@ -9,8 +9,9 @@ $m= new Result();
 
 if(isset($_POST['submit']))
 { 
+ $question_id=array_keys($_POST);
  $result=0;
- $i=1;
+ $count=0;
  $h=new History();
  $h->stu_id =$std_id;
  $h->exam_id=$eid;
@@ -19,24 +20,25 @@ if ($data=$q->readByexamId($eid))
 foreach ($data as $key => $value) 
 {
   foreach ($value as $k => $v) {$row[$k]=$v;}
-  $correct_option=$row['answer'];
-  $choice=$_POST['choice'.$i];
 
-      if ($choice==$correct_option) 
+  $w=$q->correct($question_id[$count]);
+
+      if ($w[0]['answer']==$_POST[$question_id[$count]]) 
       { 
            $result=$result+1;
       }
-      $i++;
-      $h->q_id=$row['q_id'];
-      $h->answer= $choice;
+      
+      $h->q_id=$question_id[$count]; 
+      $h->answer= $_POST[$question_id[$count]]; 
       if ($m->check($std_id,$eid))
-		{
-			$h->updatehis($std_id,$eid,$row['q_id']);
+		  {
+			$h->updatehis($std_id,$eid, $h->q_id);
 	    }
-		else
+		 else
 		{
 			$h->create(); 
 		} 
+    $count++;
 
 }
 
@@ -93,7 +95,7 @@ foreach ($data as $key => $value)
 		}
 	echo "
 		<span class='choicet'>
-			<input type='radio'  name='choice$i' value='option1' />
+			<input type='radio'  name='{$row['q_id']}' value='option1' />
 		
 				A.{$row['option1']}
 			
@@ -102,7 +104,7 @@ foreach ($data as $key => $value)
 		<br>
 
 		<span class='choicet'>
-			<input type='radio'  name='choice$i' value='option2' />
+			<input type='radio'  name='{$row['q_id']}' value='option2' />
 			
 				B.{$row['option2']}
 		</span>
@@ -113,7 +115,7 @@ foreach ($data as $key => $value)
 		{
 			echo "
 		<span class='choicet'>
-			<input type='radio'  name='choice$i' value='option3' />
+			<input type='radio'  name='{$row['q_id']}' value='option3' />
 	        C.{$row['option3']}
 		</span>
 
@@ -121,7 +123,7 @@ foreach ($data as $key => $value)
 
 
 		<span class='choicet'>
-			<input type='radio'  name='choice$i' value='option4' />
+			<input type='radio'  name='{$row['q_id']}' value='option4' />
               D.{$row['option4']}
 			</span>";
 		}
