@@ -48,5 +48,39 @@ class Admin extends dbconnection{
 		return $this->fetchAll($result);
 	}
 
+	public function st_count(){
+		$query  = "SELECT COUNT(stu_id) AS 'count' FROM student";
+		
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);
+	}
 
+	public function topcat(){
+		$query  = "SELECT category.cat_name,COUNT(exam.cat_id) AS 'num' FROM exam,category WHERE category.cat_id=exam.cat_id GROUP BY category.cat_id ORDER BY exam.cat_id DESC LIMIT 3";
+		
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);
+	}
+
+	public function topexam(){
+		$query  = "SELECT exam.name,COUNT(result.exam_id) AS 'num' FROM result,exam WHERE result.exam_id=exam.exam_id GROUP BY result.exam_id ORDER BY(num) DESC LIMIT 2";
+		
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);
+	}
+
+	public function PassandFail($id){
+		$query  = "SELECT result.exam_id,exam.name,result.mark FROM result,exam WHERE result.exam_id=exam.exam_id AND result.exam_id=$id";
+		
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);
+	}
+
+	public function readAllexam(){
+		$query  = "SELECT * FROM exam";
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);
+	}
+
+	
 }

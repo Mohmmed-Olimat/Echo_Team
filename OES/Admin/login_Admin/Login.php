@@ -99,12 +99,7 @@
                                 ?>
 
                         </div>
-                          <div class="register-link">
-                                <p>
-                                    If you don't have an account?
-                                    <a href="signup.php">Sign-up Here</a>
-                                </p>
-                            </div>
+                        
                     </div>
                     
                 </div>
