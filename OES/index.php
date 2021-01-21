@@ -40,7 +40,7 @@
                             </div><!--icon box top -->
                             <h4>Online cousres</h4>
                             <p>We have lots of exam preparation to help you get ready for your exam. These include free materials.Search for your exam and find the preparation materials you need.</p>
-                         <a href="#"> <button type="button" class="btn btn-primary">Show</button></a>
+                         <a href=""> <button type="button" class="btn btn-primary">Show</button></a>
                         </div><!--grey box -->
                     </div><!--/span3-->
                     <!--/span3-->

@@ -3,6 +3,7 @@ $result=$_GET['result'];
 $eid=$_GET['eid'];
 $q= new Question();
 $hi=new History();
+
 $std_id=$_SESSION['student_id'];
  if ($data=$hi->readhis($std_id,$eid))
 {
@@ -29,7 +30,7 @@ $std_id=$_SESSION['student_id'];
 <form action="" style="width: 1200px" method="post">
 <div class="form-wrapper" style="" > <!-- Card Start -->
 	<?php
-     if ($data=$q->readByexamId($eid)){
+     if ($data=$q->resultByexamId($eid,$std_id)){
                           $i=1;
                           $c=0;
                          

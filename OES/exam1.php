@@ -25,7 +25,7 @@ foreach ($data as $key => $value)
 
       if ($w[0]['answer']==$_POST[$question_id[$count]]) 
       { 
-           $result=$result+1;
+           $result++;
       }
       
       $h->q_id=$question_id[$count]; 
@@ -91,11 +91,11 @@ foreach ($data as $key => $value)
 	";
 		if($row['q_img'])
 		{
-			 echo "<img src='Admin/img/questionimg/{$row['q_img']}' width='600' height='300' alt='No img'><br>";
+			 echo "<img src='Admin/img/questionimg/{$row['q_img']}' width='400' height='300' alt='No img'><br>";
 		}
 	echo "
 		<span class='choicet'>
-			<input type='radio'  name='{$row['q_id']}' value='option1' />
+			<input type='radio'  name='{$row['q_id']}' value='option1' required/>
 		
 				A.{$row['option1']}
 			
@@ -104,7 +104,7 @@ foreach ($data as $key => $value)
 		<br>
 
 		<span class='choicet'>
-			<input type='radio'  name='{$row['q_id']}' value='option2' />
+			<input type='radio'  name='{$row['q_id']}' value='option2' required/>
 			
 				B.{$row['option2']}
 		</span>
@@ -115,7 +115,7 @@ foreach ($data as $key => $value)
 		{
 			echo "
 		<span class='choicet'>
-			<input type='radio'  name='{$row['q_id']}' value='option3' />
+			<input type='radio'  name='{$row['q_id']}' value='option3' required/>
 	        C.{$row['option3']}
 		</span>
 
@@ -123,7 +123,7 @@ foreach ($data as $key => $value)
 
 
 		<span class='choicet'>
-			<input type='radio'  name='{$row['q_id']}' value='option4' />
+			<input type='radio'  name='{$row['q_id']}' value='option4'required />
               D.{$row['option4']}
 			</span>";
 		}
@@ -157,7 +157,7 @@ id="myModal"><!-- model start -->
         
         <!-- Modal body -->
         
-          <?php if ($result<3)
+          <?php if ($result<5)
            {
               echo "<div class='modal-body alert alert-danger  text-center h2 '> Mark = $result";
               echo " <br>Study Well Next Time </div>";
@@ -181,6 +181,11 @@ id="myModal"><!-- model start -->
   </div> <!-- model end -->
   
 </div> 
+
+
+
+
+
 
 
 

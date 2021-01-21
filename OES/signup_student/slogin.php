@@ -59,14 +59,14 @@
                         <h2 class="form-title">Log In</h2>
                         
                         <div class="form-group">
-                            <input type="email" class="form-input" name="email" placeholder="Your Email" required />
+                            <input type="email" class="form-input" name="email" placeholder="Your Email"/>
                         </div>
                        
                         
                       
                          <div class="form-group">
-                            <input type="password" class="form-input" name="pass" id="password" placeholder="Password" required />
-                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                            <input type="password" class="form-input" name="pass" id="password" placeholder="Password"/>
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                          <div class="form-group">
                     
