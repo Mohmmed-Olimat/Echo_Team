@@ -59,5 +59,22 @@ class Question extends Exam{
 		$query = "DELETE FROM questions WHERE q_id = $id";
 		$this->performQuery($query);
 	}
+	public function correct($id){
+		$query  = "SELECT answer FROM questions 
+		           WHERE q_id = $id ";
+		
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);
+		
+	}
+
+public function resultByexamId($id,$sid){
+		$query  = "SELECT * FROM history,questions WHERE history.q_id=questions.q_id AND history.exam_id=$id AND stu_id=$sid";
+		$result = $this->performQuery($query);
+		return $this->fetchAll($result);	
+	}
+
+
+	
 
 }

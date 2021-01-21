@@ -125,15 +125,16 @@ $studentSet=$data[0];
                                     </div>
                                     <div class=" h4 si col-lg-6 col-md-5 col-sm-12 col-xs-12">
                                         <div class="header-right-info">
+
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
                                                
                                                 <li class="nav-item">
-                                                        <?php
+                                                      <?php
                                                         $img=$studentSet['image']; 
-                                                        echo "<img src='Admin/img/student/$img' height='' width='80'>";
+                                                        echo "<img src='Admin/img/student/$img' width='50'>"; 
                                                          ?>
-                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-                                                       
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle" style="padding-left: 0px;">
+                                                        
 
                                                             <span class="admin-name si">
                                                                 <?php echo $studentSet['full_name'];?>    

@@ -97,11 +97,11 @@ $error     =0;
                         <h2 class="form-title">Update Information</h2>
                         <div class="form-group">
                             <input type="text" class="form-input" name="full_name"  placeholder="Full Name"
-                                   value="<?php  echo $studentSet['full_name'];?>" required/>
+                                   value="<?php  echo $studentSet['full_name'];?>"/>
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-input" name="email" placeholder="Your Email"
-                                    value="<?php echo $studentSet['email'];?>" required/>
+                                    value="<?php echo $studentSet['email'];?>"/>
                              <div style="color:red; ">
                                 <?php if (isset($emailerror))
                                 { echo $emailerror; }?>
@@ -111,17 +111,17 @@ $error     =0;
                        
                         <div class="form-group">
                             <input type="text" class="form-input"  placeholder="Phone" name="mobile"
-                                   value="<?php  echo $studentSet['mobile'];?>" required />
+                                   value="<?php  echo $studentSet['mobile'];?>" />
                              <div style="color:red; ">
                                 <?php if (isset($errormobile)) 
                                 { echo $errormobile; }?>       
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input" placeholder="Education level" name="edu_level"   value="<?php echo $studentSet['edu_level'];?>" required />
+                            <input type="text" class="form-input" placeholder="Education level" name="edu_level"   value="<?php echo $studentSet['edu_level'];?>"/>
                         </div>
                          <div class="form-group">
-                            <input type="password" class="form-input" name="pass" id="password" placeholder="Password" value="<?php  echo $studentSet['password'];?>" required/>
+                            <input type="password" class="form-input" name="pass" id="password" placeholder="Password" value="<?php  echo $studentSet['password'];?>"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                              <div style="color:red; ">
                                 <?php if (isset($errorpass2)) 
@@ -130,7 +130,7 @@ $error     =0;
                             
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-input" name="con_pass" id="password" placeholder="Confirm-Password" required />
+                            <input type="password" class="form-input" name="con_pass" id="password" placeholder="Confirm-Password" />
                            
                            <div style="color:red; ">
                                 <?php if (isset($errorpass1)) 
@@ -150,7 +150,7 @@ $error     =0;
 
                         <div class="form-group">
                             <label>Change Image:</label>
-                            <input type="file" name ="student_image" class="form-input"  placeholder="Your Image" />
+                            <input type="file" name ="student_image" class="form-input"  placeholder="Your Image"/>
                         </div>
 
                          <div class="form-group">

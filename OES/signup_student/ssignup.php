@@ -87,10 +87,10 @@ $error     =0;
                         <h2 class="form-title">Create account</h2>
                         <div class="form-group">
                             <input type="text" class="form-input" name="full_name"  placeholder="Full Name"
-                            value="<?php echo $name;?>" required  />
+                            value="<?php echo $name;?>" />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input" name="email" placeholder="Your Email" value="<?php echo $email;?>" required />
+                            <input type="text" class="form-input" name="email" placeholder="Your Email" value="<?php echo $email;?>" />
                             <div style="color:red; ">
                                 <?php if (isset($emailerror))
                                 { echo $emailerror; }?>
@@ -99,17 +99,17 @@ $error     =0;
                         </div>
                        
                         <div class="form-group">
-                            <input type="text" class="form-input"  placeholder="Phone" name="mobile"  value="<?php echo $mobile;?>" required />
+                            <input type="text" class="form-input"  placeholder="Phone" name="mobile"  value="<?php echo $mobile;?>"  />
                             <div style="color:red; ">
                                 <?php if (isset($errormobile)) 
                                 { echo $errormobile; }?>       
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input" placeholder="Education level" name="edu_level"  value="<?php echo $edu_level;?>" required/>
+                            <input type="text" class="form-input" placeholder="Education level" name="edu_level"  value="<?php echo $edu_level;?>"/>
                         </div>
                          <div class="form-group">
-                            <input type="password" class="form-input" name="pass" id="password" placeholder="Password" value="<?php echo $pass;?>" required />
+                            <input type="password" class="form-input" name="pass" id="password" placeholder="Password" value="<?php echo $pass;?>" />
                              <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                             <div style="color:red; ">
                                 <?php if (isset($errorpass)) 
@@ -119,7 +119,7 @@ $error     =0;
                             
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-input" name="con_pass" id="password" placeholder="Confirm-Password" required/>
+                            <input type="password" class="form-input" name="con_pass" id="password" placeholder="Confirm-Password"/>
                               <div style="color:red; ">
                                 <?php if (isset($errorcon)) 
                                 { echo $errorcon; }?>       
@@ -128,7 +128,7 @@ $error     =0;
                         </div>
                         <div class="form-group">
                             <label>Upload Image:</label>
-                            <input type="file" name ="std_image" class="form-input"  placeholder="Your Image" required/>
+                            <input type="file" name ="std_image" class="form-input"  placeholder="Your Image"/>
                         </div>
 
                          <div class="form-group">
